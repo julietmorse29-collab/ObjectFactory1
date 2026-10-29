@@ -16,11 +16,19 @@ public class Donuts{
     //making a constructor of donuts-name of constructor has to be the name of the class
     //has to fallow the name of the java class
     //dont write void
-    public Donuts(){
+    public Donuts(int pNumberOfDonuts){
         frostingType="Boston Cream";
         hasfilling=true;
-        numOfDonuts=3;
+        numOfDonuts= pNumberOfDonuts;
 
 
     }//end of constructor
+    public void printInfo(){
+        System.out.println("the frosting type of this donut is"+frostingType);
+        System.out.println("and the filling is"+hasfilling);
+        System.out.println("and the amount of donuts are" +numOfDonuts);
+
+
+
+    }
 }//end of class donuts
